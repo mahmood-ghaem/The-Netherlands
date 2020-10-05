@@ -1,0 +1,1163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Intense Job Board</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="intense web design multipurpose template">
+    <meta name="date" content="Dec 26">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            margin: 0px;
+        }
+
+        h4, .h4 {
+            font-size: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        [class*="col-"] {
+            float: left;
+            padding: 1px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 576px) {
+            .col-sm-1 {
+                width: 8.33%;
+            }
+
+            .col-sm-2 {
+                width: 16.66%;
+            }
+
+            .col-sm-3 {
+                width: 25%;
+            }
+
+            .col-sm-4 {
+                width: 33.33%;
+            }
+
+            .col-sm-5 {
+                width: 41.66%;
+            }
+
+            .col-sm-6 {
+                width: 50%;
+            }
+
+            .col-sm-7 {
+                width: 58.33%;
+            }
+
+            .col-sm-8 {
+                width: 66.66%;
+            }
+
+            .col-sm-9 {
+                width: 75%;
+            }
+
+            .col-sm-10 {
+                width: 83.33%;
+            }
+
+            .col-sm-11 {
+                width: 91.66%;
+            }
+
+            .col-sm-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-md-1 {
+                width: 8.33%;
+            }
+
+            .col-md-2 {
+                width: 16.66%;
+            }
+
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-4 {
+                width: 33.33%;
+            }
+
+            .col-md-5 {
+                width: 41.66%;
+            }
+
+            .col-md-6 {
+                width: 50%;
+            }
+
+            .col-md-7 {
+                width: 58.33%;
+            }
+
+            .col-md-8 {
+                width: 66.66%;
+            }
+
+            .col-md-9 {
+                width: 75%;
+            }
+
+            .col-md-10 {
+                width: 83.33%;
+            }
+
+            .col-md-11 {
+                width: 91.66%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .col-lg-1 {
+                width: 8.33%;
+            }
+
+            .col-lg-2 {
+                width: 16.66%;
+            }
+
+            .col-lg-3 {
+                width: 25%;
+            }
+
+            .col-lg-4 {
+                width: 33.33%;
+            }
+
+            .col-lg-5 {
+                width: 41.66%;
+            }
+
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .col-lg-7 {
+                width: 58.33%;
+            }
+
+            .col-lg-8 {
+                width: 66.66%;
+            }
+
+            .col-lg-9 {
+                width: 75%;
+            }
+
+            .col-lg-10 {
+                width: 83.33%;
+            }
+
+            .col-lg-11 {
+                width: 91.66%;
+            }
+
+            .col-lg-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .col-xl-1 {
+                width: 8.33%;
+            }
+
+            .col-xl-2 {
+                width: 16.66%;
+            }
+
+            .col-xl-3 {
+                width: 25%;
+            }
+
+            .col-xl-4 {
+                width: 33.33%;
+            }
+
+            .col-xl-5 {
+                width: 41.66%;
+            }
+
+            .col-xl-6 {
+                width: 50%;
+            }
+
+            .col-xl-7 {
+                width: 58.33%;
+            }
+
+            .col-xl-8 {
+                width: 66.66%;
+            }
+
+            .col-xl-9 {
+                width: 75%;
+            }
+
+            .col-xl-10 {
+                width: 83.33%;
+            }
+
+            .col-xl-11 {
+                width: 91.66%;
+            }
+
+            .col-xl-12 {
+                width: 100%;
+            }
+        }
+
+        html body .offset-top-0 {
+            margin-top: 0;
+        }
+
+        html body .offset-top-4 {
+            margin-top: 4px;
+        }
+
+        html body .offset-top-10 {
+            margin-top: 10px;
+        }
+
+        html body .offset-top-14 {
+            margin-top: 14px;
+        }
+
+        html body .offset-top-20 {
+            margin-top: 20px;
+        }
+
+        html body .offset-top-24 {
+            margin-top: 24px;
+        }
+
+        html body .offset-top-30 {
+            margin-top: 30px;
+        }
+
+        html body .offset-top-34 {
+            margin-top: 34px;
+        }
+
+        html body .offset-top-41 {
+            margin-top: 41px;
+        }
+
+        html body .offset-top-50 {
+            margin-top: 50px;
+        }
+
+        html body .offset-top-66 {
+            margin-top: 66px;
+        }
+
+        html body .offset-top-98 {
+            margin-top: 98px;
+        }
+
+        html body .offset-top-110 {
+            margin-top: 110px;
+        }
+
+        html body .offset-top-124 {
+            margin-top: 124px;
+        }
+
+        @media (min-width: 480px) {
+            html body .offset-sm-top-0 {
+                margin-top: 0;
+            }
+
+            html body .offset-sm-top-4 {
+                margin-top: 4px;
+            }
+
+            html body .offset-sm-top-10 {
+                margin-top: 10px;
+            }
+
+            html body .offset-sm-top-14 {
+                margin-top: 14px;
+            }
+
+            html body .offset-sm-top-20 {
+                margin-top: 20px;
+            }
+
+            html body .offset-sm-top-24 {
+                margin-top: 24px;
+            }
+
+            html body .offset-sm-top-30 {
+                margin-top: 30px;
+            }
+
+            html body .offset-sm-top-34 {
+                margin-top: 34px;
+            }
+
+            html body .offset-sm-top-41 {
+                margin-top: 41px;
+            }
+
+            html body .offset-sm-top-50 {
+                margin-top: 50px;
+            }
+
+            html body .offset-sm-top-66 {
+                margin-top: 66px;
+            }
+
+            html body .offset-sm-top-98 {
+                margin-top: 98px;
+            }
+
+            html body .offset-sm-top-110 {
+                margin-top: 110px;
+            }
+
+            html body .offset-sm-top-124 {
+                margin-top: 124px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            html body .offset-md-top-0 {
+                margin-top: 0;
+            }
+
+            html body .offset-md-top-4 {
+                margin-top: 4px;
+            }
+
+            html body .offset-md-top-10 {
+                margin-top: 10px;
+            }
+
+            html body .offset-md-top-14 {
+                margin-top: 14px;
+            }
+
+            html body .offset-md-top-20 {
+                margin-top: 20px;
+            }
+
+            html body .offset-md-top-24 {
+                margin-top: 24px;
+            }
+
+            html body .offset-md-top-30 {
+                margin-top: 30px;
+            }
+
+            html body .offset-md-top-34 {
+                margin-top: 34px;
+            }
+
+            html body .offset-md-top-41 {
+                margin-top: 41px;
+            }
+
+            html body .offset-md-top-50 {
+                margin-top: 50px;
+            }
+
+            html body .offset-md-top-66 {
+                margin-top: 66px;
+            }
+
+            html body .offset-md-top-98 {
+                margin-top: 98px;
+            }
+
+            html body .offset-md-top-110 {
+                margin-top: 110px;
+            }
+
+            html body .offset-md-top-124 {
+                margin-top: 124px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            html body .offset-lg-top-0 {
+                margin-top: 0;
+            }
+
+            html body .offset-lg-top-4 {
+                margin-top: 4px;
+            }
+
+            html body .offset-lg-top-10 {
+                margin-top: 10px;
+            }
+
+            html body .offset-lg-top-14 {
+                margin-top: 14px;
+            }
+
+            html body .offset-lg-top-20 {
+                margin-top: 20px;
+            }
+
+            html body .offset-lg-top-24 {
+                margin-top: 24px;
+            }
+
+            html body .offset-lg-top-30 {
+                margin-top: 30px;
+            }
+
+            html body .offset-lg-top-34 {
+                margin-top: 34px;
+            }
+
+            html body .offset-lg-top-41 {
+                margin-top: 41px;
+            }
+
+            html body .offset-lg-top-50 {
+                margin-top: 50px;
+            }
+
+            html body .offset-lg-top-66 {
+                margin-top: 66px;
+            }
+
+            html body .offset-lg-top-98 {
+                margin-top: 98px;
+            }
+
+            html body .offset-lg-top-110 {
+                margin-top: 110px;
+            }
+
+            html body .offset-lg-top-124 {
+                margin-top: 124px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            html body .offset-xl-top-0 {
+                margin-top: 0;
+            }
+
+            html body .offset-xl-top-4 {
+                margin-top: 4px;
+            }
+
+            html body .offset-xl-top-10 {
+                margin-top: 10px;
+            }
+
+            html body .offset-xl-top-14 {
+                margin-top: 14px;
+            }
+
+            html body .offset-xl-top-20 {
+                margin-top: 20px;
+            }
+
+            html body .offset-xl-top-24 {
+                margin-top: 24px;
+            }
+
+            html body .offset-xl-top-30 {
+                margin-top: 30px;
+            }
+
+            html body .offset-xl-top-34 {
+                margin-top: 34px;
+            }
+
+            html body .offset-xl-top-41 {
+                margin-top: 41px;
+            }
+
+            html body .offset-xl-top-50 {
+                margin-top: 50px;
+            }
+
+            html body .offset-xl-top-66 {
+                margin-top: 66px;
+            }
+
+            html body .offset-xl-top-98 {
+                margin-top: 98px;
+            }
+
+            html body .offset-xl-top-110 {
+                margin-top: 110px;
+            }
+
+            html body .offset-xl-top-124 {
+                margin-top: 124px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            html body .offset-xxl-top-0 {
+                margin-top: 0;
+            }
+
+            html body .offset-xxl-top-4 {
+                margin-top: 4px;
+            }
+
+            html body .offset-xxl-top-10 {
+                margin-top: 10px;
+            }
+
+            html body .offset-xxl-top-14 {
+                margin-top: 14px;
+            }
+
+            html body .offset-xxl-top-20 {
+                margin-top: 20px;
+            }
+
+            html body .offset-xxl-top-24 {
+                margin-top: 24px;
+            }
+
+            html body .offset-xxl-top-30 {
+                margin-top: 30px;
+            }
+
+            html body .offset-xxl-top-34 {
+                margin-top: 34px;
+            }
+
+            html body .offset-xxl-top-41 {
+                margin-top: 41px;
+            }
+
+            html body .offset-xxl-top-50 {
+                margin-top: 50px;
+            }
+
+            html body .offset-xxl-top-66 {
+                margin-top: 66px;
+            }
+
+            html body .offset-xxl-top-98 {
+                margin-top: 98px;
+            }
+
+            html body .offset-xxl-top-110 {
+                margin-top: 110px;
+            }
+
+            html body .offset-xxl-top-124 {
+                margin-top: 124px;
+            }
+        }
+
+        .text-extra-big {
+            font-size: 38px;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+            .text-extra-big {
+                font-size: 52px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .text-extra-big {
+                font-size: 70px;
+            }
+        }
+
+        .text-white {
+            color: #fff !important;
+        }
+
+        .text-muted {
+            color: #bababa !important;
+        }
+
+        .text-primary {
+            color: #8ac03c !important;
+        }
+
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+
+
+
+
+
+
+        .top-pic-container {
+            height: 700px;
+            position: relative;
+            background-image: url(images/background-01-1920x870.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .top-pic-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            /* justify-content: center; */
+            padding-top: 300px;
+            text-align: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .navbar-container {
+            min-width: 992px !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+        }
+
+        .navbar {
+            display: block;
+            position: fixed;
+            width: 100%;
+            /*height: 86px;*/
+            z-index: 100;
+            /*text-align: left;*/
+            background: #191919;
+            box-shadow: 0 1px 10px 0 rgba(67, 67, 69, 0.35);
+        }
+
+            .navbar ul {
+                list-style-type: none;
+                margin-bottom: 0;
+                margin-top: 0;
+                display: block;
+            }
+
+            .navbar li {
+                float: left;
+                padding: 25px;
+            }
+
+                .navbar li a {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-decoration: none;
+                    display: block;
+                    position: relative;
+                    /* transition: .3s all ease; */
+                }
+
+                    .navbar li a:hover {
+                    }
+
+
+
+                    .navbar li a:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        bottom: -2px;
+                        left: 0;
+                        background-color: #8ac03c;
+                        visibility: hidden;
+                        transform: scaleX(0);
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    .navbar li a:hover:before {
+                        visibility: visible;
+                        transform: scaleX(1);
+                    }
+
+                .navbar li.active a {
+                    border-bottom: 2px solid #8ac03c;
+                }
+
+
+        /*.navbar li a:after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        width: 0;
+                        height: 2px;
+                        margin-top: 4px;
+                        background: #8ac03c;
+                        transition: .3s all ease;
+                    }*/
+
+        .navbar-logo {
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+            border-radius: 5px;
+            font-weight: 700;
+            white-space: nowrap;
+            letter-spacing: 0.06em;
+            border-width: 2px;
+            padding: 7px 22px;
+            max-height: 40px;
+            line-height: 22px;
+        }
+
+            .navbar-btn:hover {
+                color: #fff;
+                background: #8ac03c;
+                box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+                border-color: transparent;
+            }
+
+        .navbar-btn-container {
+            padding-top: 18px;
+        }
+
+        .navbar-btn-middletxt {
+            display: inline-block !important;
+            color: #bababa !important;
+        }
+
+        .navbar-icon {
+            font-size: 20px;
+            color: #fff;
+            line-height: 50px;
+            padding: 10px
+        }
+
+        @media only screen and (max-width: 576px) {
+            .navbar {
+                height: 56px;
+            }
+
+            .navbar-btn-box {
+                top: 50px;
+            }
+
+            .navbar-logo img {
+                height: 23px;
+            }
+        }
+
+        @media only screen and (min-width: 576px) {
+            .navbar-icon {
+                font-size: 25px;
+                line-height: 55px;
+            }
+
+            .navbar {
+                height: 56px;
+            }
+
+            .navbar-btn-box {
+                top: 50px;
+            }
+
+            .navbar-logo img {
+                height: 25px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .navbar-icon {
+                font-size: 30px;
+                line-height: 65px;
+            }
+
+            .navbar {
+                height: 66px;
+            }
+
+            .navbar-btn-box {
+                top: 60px;
+            }
+
+            .navbar-logo img {
+                height: 28px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .navbar-icon {
+                font-size: 35px;
+                line-height: 75px;
+            }
+
+            .navbar {
+                height: 76px;
+            }
+
+            .navbar-btn-box {
+                top: 70px;
+            }
+
+            .navbar-logo {
+                padding: 20px;
+            }
+
+                .navbar-logo img {
+                    height: 30px;
+                }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #nav_small {
+                visibility: visible;
+            }
+
+            #nav_big {
+                visibility: hidden;
+            }
+            /*.navbar {
+                height: 86px;
+            }*/
+        }
+
+        @media screen and (min-width: 1200px) {
+            #nav_small {
+                visibility: hidden;
+            }
+
+            #nav_big {
+                visibility: visible;
+            }
+
+            .navbar {
+                height: 86px;
+            }
+
+            .navbar-logo {
+                padding: 20px;
+            }
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        .navbar-btn-box {
+            position: fixed;
+            right: 0px;
+            /*top: 80px;*/
+            width: 250px;
+            padding: 20px;
+            z-index: 101;
+            overflow: hidden;
+            border-radius: 5px;
+            /*transition: box-shadow .3s ease;*/
+            /*transition: visibility 0s, opacity 0.5s linear;*/
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+            background: #191919;
+            color: #fff;
+            transition: all 1s;
+        }
+
+            .navbar-btn-box.change {
+                opacity: 1;
+                visibility: visible;
+                transition: all 1s;
+            }
+
+
+
+
+
+
+
+
+
+
+        .page-loader-variant-1 {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 25px;
+            z-index: 9999999;
+            background: #191919;
+            transition: .3s all ease;
+        }
+            .page-loader-variant-1 .spinner {
+                width: 56px;
+                height: 56px;
+                background: url("images/loading.gif") no-repeat;
+                /*background-position: -2240px 0;
+                animation: 1.5s sprite-animation steps(40) infinite;*/
+            }
+    </style>
+</head>
+<body>
+    <div id="loading" class="page-loader-variant-1">
+        <div>
+            <img style='margin-top: -20px;margin-left: -25px;' width='329' height='67' src='images/logo-big.png' alt='' />
+            <div class="offset-top-41" style="text-align:center;">
+                <img src="images/loading.gif" width="56" height="56" />
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () { document.getElementById("loading").style.display = "none" }
+    </script>
+    <header class="top-pic-container">
+        <div class="navbar-container">
+            <nav id="nav_small" class="navbar row">
+                <div class="col-2" style="text-align:left;">
+                    <a href="javascript:void(0);" class="navbar-icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="navbar-logo col-8"><a href="../index.html"><img src='images/logo.png' alt='' /></a></div><!--width='218' height='35'-->
+                <div class="col-2" style="text-align:right;padding-right:20px;">
+                    <a href="javascript:void(0);" class="navbar-icon" onclick="toggleBox()">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </a>
+                </div>
+            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#">Find a Job</a>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="navbar-btn-box">
+                <a class="navbar-btn" href="">
+                    <span>Login</span>
+                </a>
+                <a class="navbar-btn" href="">
+                    <span>Register</span>
+                </a>
+            </div>
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+                function toggleBox() {
+                    document.querySelector('.navbar-btn-box').classList.toggle('change');
+                }
+            </script>
+            <nav id="nav_big" class="navbar row">
+                <div class="navbar-logo col-2">
+                    <a href="../index.html"><img width='218' height='35' src='images/logo.png' alt='' /></a>
+                </div>
+                <div class="col-7">
+                    <ul>
+                        <li class="active">
+                            <a href="#"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Find a Job</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Post a Job</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Pages</span></a>
+                            <!-- <ul class="rd-navbar-dropdown">
+                                <li><a href="about-us.html"><span class="text-middle">About Us</span></a>
+                                </li>
+                                <li><a href="your-career-starts-here.html"><span class="text-middle">Your Career Starts Here</span></a>
+                                </li>
+                                <li><a href="resume-page.html"><span class="text-middle">Resume Page</span></a>
+                                </li>
+                                <li><a href="project-managers.html"><span class="text-middle">Project Managers</span></a>
+                                </li>
+                                <li><a href="faq.html"><span class="text-middle">FAQ</span></a>
+                                </li>
+                                <li><a href="contact-us.html"><span class="text-middle">Contact Us</span></a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="#"><span>Blog</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-btn-container col-3">
+                    <a class="navbar-btn" href="">
+                        <span>Login</span>
+                    </a>
+                    <div class="navbar-btn-middletxt">
+                        <span>or</span>
+                    </div>
+                    <a class="navbar-btn" href="">
+                        <span>Register</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="top-pic-info col-12">
+            <div class="text-extra-big text-white font-weight-bold">Build Your Future</div>
+            <h4 class="text-muted offset-top-20 offset-md-top-41">We offer <span class="text-primary font-weight-bold">2,989</span> job vacancies right now!</h4>
+        </div>
+    </header>
+</body>
+</html>
