@@ -11,8 +11,14 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        @font-face {
+            font-family: Lato;
+            src: url(fonts/Lato/Lato-Black.ttf);
+        }
+
         body {
-            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-family: Lato;
+            /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
             margin: 0px;
         }
 
@@ -24,6 +30,9 @@
             box-sizing: border-box;
         }
 
+        section {
+            display: block;
+        }
 
         [class*="col-"] {
             float: left;
@@ -721,6 +730,14 @@
             background: #191919;
             box-shadow: 0 1px 10px 0 rgba(67, 67, 69, 0.35);
         }
+            /*.navbar.change {
+                background: #8ac03c;
+                display: block;
+                position: fixed;
+                width: 100%;
+                z-index: 100;
+                box-shadow: 0 1px 10px 0 rgba(67, 67, 69, 0.35);
+            }*/
 
             .navbar ul {
                 list-style-type: none;
@@ -829,111 +846,7 @@
             padding: 10px
         }
 
-        @media only screen and (max-width: 576px) {
-            .navbar {
-                height: 56px;
-            }
 
-            .navbar-btn-box {
-                top: 50px;
-            }
-
-            .navbar-logo img {
-                height: 23px;
-            }
-        }
-
-        @media only screen and (min-width: 576px) {
-            .navbar-icon {
-                font-size: 25px;
-                line-height: 55px;
-            }
-
-            .navbar {
-                height: 56px;
-            }
-
-            .navbar-btn-box {
-                top: 50px;
-            }
-
-            .navbar-logo img {
-                height: 25px;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            .navbar-icon {
-                font-size: 30px;
-                line-height: 65px;
-            }
-
-            .navbar {
-                height: 66px;
-            }
-
-            .navbar-btn-box {
-                top: 60px;
-            }
-
-            .navbar-logo img {
-                height: 28px;
-            }
-        }
-
-        @media only screen and (min-width: 992px) {
-            .navbar-icon {
-                font-size: 35px;
-                line-height: 75px;
-            }
-
-            .navbar {
-                height: 76px;
-            }
-
-            .navbar-btn-box {
-                top: 70px;
-            }
-
-            .navbar-logo {
-                padding: 20px;
-            }
-
-                .navbar-logo img {
-                    height: 30px;
-                }
-        }
-
-        @media screen and (max-width: 1200px) {
-            #nav_small {
-                visibility: visible;
-            }
-
-            #nav_big {
-                visibility: hidden;
-            }
-            /*.navbar {
-                height: 86px;
-            }*/
-        }
-
-        @media screen and (min-width: 1200px) {
-            #nav_small {
-                visibility: hidden;
-            }
-
-            #nav_big {
-                visibility: visible;
-            }
-
-            .navbar {
-                height: 86px;
-            }
-
-            .navbar-logo {
-                padding: 20px;
-            }
-        }
 
         .overlay {
             height: 100%;
@@ -1038,6 +951,7 @@
             background: #191919;
             transition: .3s all ease;
         }
+
             .page-loader-variant-1 .spinner {
                 width: 56px;
                 height: 56px;
@@ -1045,6 +959,251 @@
                 /*background-position: -2240px 0;
                 animation: 1.5s sprite-animation steps(40) infinite;*/
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .belt-container {
+            background-color: #8ac03c;
+            overflow: hidden;
+        }
+
+            /*.belt-container a:link {
+                background-color: #c63030;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration: none;
+                    border: 1px solid #ca1b1b;
+            }
+                .belt-container a:hover {
+                    color: #6e9930;
+                    background: #6e9930;
+                }*/
+            /*.belt-container:after {
+                content: " ";
+                background-color: #000;
+                position: absolute;
+                width: 5px;
+                height: 100px;
+                top: 10px;
+                left: 50%;
+                display: block;
+            }*/
+
+
+            .belt-container div {
+                letter-spacing: 0.06em;
+                display: block;
+                text-align: center;
+                color: #fff;
+            }
+
+                .belt-container div:hover {
+                    background: #6e9930;
+                }
+
+                .belt-container div hr {
+                    content: "";
+                    width: 1px;
+                    right: 0;
+                    display: block;
+                    background: rgb(255, 255, 255);
+                    float: right;
+                    opacity: 0.4;
+                }
+
+
+
+
+
+
+
+
+
+
+
+        @media only screen and (max-width: 576px) {
+            .navbar {
+                height: 56px;
+            }
+
+            .navbar-btn-box {
+                top: 50px;
+            }
+
+            .navbar-logo img {
+                height: 23px;
+            }
+            .belt-container div {
+                max-height: 77px;
+                line-height: 20px;
+                font-size: 16px;
+                font-weight: 400;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+                .belt-container div hr {
+                    height: 86px;
+                    transform: translateY(-70%);
+                }
+        }
+
+        @media only screen and (min-width: 576px) {
+            .navbar-icon {
+                font-size: 25px;
+                line-height: 55px;
+            }
+
+            .navbar {
+                height: 56px;
+            }
+
+            .navbar-btn-box {
+                top: 50px;
+            }
+
+            .navbar-logo img {
+                height: 25px;
+            }
+            .belt-container div {
+                max-height: 97px;
+                line-height: 25px;
+                font-size: 16px;
+                font-weight: 400;
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+                .belt-container div hr {
+                    height: 86px;
+                    transform: translateY(-70%);
+                }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .navbar-icon {
+                font-size: 30px;
+                line-height: 65px;
+            }
+
+            .navbar {
+                height: 66px;
+            }
+
+            .navbar-btn-box {
+                top: 60px;
+            }
+
+            .navbar-logo img {
+                height: 28px;
+            }
+            .belt-container div {
+                max-height: 127px;
+                line-height: 30px;
+                font-size: 18px;
+                font-weight: 500;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+                .belt-container div hr {
+                    height: 107px;
+                    transform: translateY(-64%);
+                }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .navbar-icon {
+                font-size: 35px;
+                line-height: 75px;
+            }
+
+            .navbar {
+                height: 76px;
+            }
+
+            .navbar-btn-box {
+                top: 70px;
+            }
+
+            .navbar-logo {
+                padding: 20px;
+            }
+
+                .navbar-logo img {
+                    height: 30px;
+                }
+
+            .belt-container div {
+                max-height: 157px;
+                line-height: 40px;
+                font-size: 22px;
+                font-weight: 600;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+                .belt-container div hr {
+                    height: 135px;
+                    transform: translateY(-69%);
+                }
+        }
+
+        @media screen and (min-width: 1200px) {
+            #nav_small {
+                visibility: hidden;
+            }
+
+            #nav_big {
+                visibility: visible;
+            }
+
+            .navbar {
+                height: 86px;
+            }
+
+            .navbar-logo {
+                padding: 20px;
+            }
+
+            .belt-container div {
+                max-height: 197px;
+                line-height: 45px;
+                font-size: 28px;
+                font-weight: 700;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+                .belt-container div hr {
+                    height: 150px;
+                    transform: translateY(-65%);
+                }
+        }
+
+        @media screen and (max-width: 1200px) {
+            #nav_small {
+                visibility: visible;
+            }
+
+            #nav_big {
+                visibility: hidden;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1159,5 +1318,149 @@
             <h4 class="text-muted offset-top-20 offset-md-top-41">We offer <span class="text-primary font-weight-bold">2,989</span> job vacancies right now!</h4>
         </div>
     </header>
+    <section class="belt-container row">
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+            <span class="fa fa-bars"></span>
+            <br />
+            dfgb
+            <br />
+            <span class="fa fa-ellipsis-h"></span>
+            <hr />
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Purple</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Black</li>
+        <li>White</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+                                                //window.onscroll = function () { myFunction() };
+
+                                                //function myFunction() {
+                                                //    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                                                //        //document.getElementById("myP").className = "test";
+                                                //        //alert("no");
+                                                //    } else {
+                                                //        //document.getElementById("myP").className = "";
+                                                //        alert(document.querySelector('.navbar').classList);
+                                                //        document.querySelector('.navbar').classList.toggle('change');
+                                                //        //document.querySelector('.navbar').className = "navbar.change.row";
+
+                                                //    }
+                                                //}
+    </script>
 </body>
 </html>
