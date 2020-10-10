@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="keywords" content="intense web design multipurpose template">
+    <meta name="keywords" content="">
     <meta name="date" content="Dec 26">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,9 +17,14 @@
         }
 
         body {
-            font-family: Lato;
+            /*font-family: Lato;*/
             /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
-            margin: 0px;
+            font-family: Verdana, sans-serif;
+            margin: 0;
+        }
+
+        img {
+            vertical-align: middle;
         }
 
         h4, .h4 {
@@ -681,7 +686,8 @@
         .top-pic-container {
             height: 700px;
             position: relative;
-            background-image: url(images/background-01-1920x870.jpg);
+            /*background-image: url(images/background-01-1920x870.jpg);*/
+            background-image: url(images/background-01-1920x870_.jpg);
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -1048,6 +1054,7 @@
             .navbar-logo img {
                 height: 23px;
             }
+
             .belt-container div {
                 max-height: 77px;
                 line-height: 20px;
@@ -1080,6 +1087,7 @@
             .navbar-logo img {
                 height: 25px;
             }
+
             .belt-container div {
                 max-height: 97px;
                 line-height: 25px;
@@ -1112,6 +1120,7 @@
             .navbar-logo img {
                 height: 28px;
             }
+
             .belt-container div {
                 max-height: 127px;
                 line-height: 30px;
@@ -1157,6 +1166,7 @@
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
+
                 .belt-container div hr {
                     height: 135px;
                     transform: translateY(-69%);
@@ -1204,6 +1214,305 @@
                 visibility: hidden;
             }
         }
+
+
+
+
+
+
+
+
+        .card-container {
+            padding-top: 110px;
+            padding-bottom: 110px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            margin-left: auto;
+            margin-right: auto;
+            display: table;
+        }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
+
+        .card-detail {
+            padding: 2px 16px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .mySlides {
+            display: none
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .dot.active, .dot:hover {
+                background-color: #717171;
+            }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .block-faq-claccis {
+            position: relative;
+            /*max-width: 320px;*/
+        }
+
+            .block-faq-claccis:before {
+                position: absolute;
+                top: 0;
+                left: 13%;
+                content: '\f095';
+                font-family: "FontAwesome";
+                font-size: 240px;
+                line-height: 1;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.05);
+            }
+
+
+
+
+
+
+
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+            .accordion.active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .accordion.active:after {
+                content: "\2212";
+            }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .form-style-6 {
+            font: 95% Arial, Helvetica, sans-serif;
+            max-width: 400px;
+            margin: 10px auto;
+            padding: 16px;
+            background: #F7F7F7;
+        }
+
+            .form-style-6 input[type="text"],
+            .form-style-6 input[type="date"],
+            .form-style-6 input[type="datetime"],
+            .form-style-6 input[type="email"],
+            .form-style-6 input[type="number"],
+            .form-style-6 input[type="search"],
+            .form-style-6 input[type="time"],
+            .form-style-6 input[type="url"],
+            .form-style-6 textarea,
+            .form-style-6 select {
+                transition: all 0.30s ease-in-out;
+                outline: none;
+                width: 100%;
+                background: #fff;
+                margin-bottom: 4%;
+                border: 1px solid #ccc;
+                padding: 3%;
+                color: #555;
+                font: 95% Arial, Helvetica, sans-serif;
+            }
+
+                .form-style-6 input[type="text"]:focus,
+                .form-style-6 input[type="date"]:focus,
+                .form-style-6 input[type="datetime"]:focus,
+                .form-style-6 input[type="email"]:focus,
+                .form-style-6 input[type="number"]:focus,
+                .form-style-6 input[type="search"]:focus,
+                .form-style-6 input[type="time"]:focus,
+                .form-style-6 input[type="url"]:focus,
+                .form-style-6 textarea:focus,
+                .form-style-6 select:focus {
+                    box-shadow: 0 0 5px #43D1AF;
+                    padding: 3%;
+                    border: 1px solid #43D1AF;
+                }
+
+            .form-style-6 input[type="submit"],
+            .form-style-6 input[type="button"] {
+                width: 100%;
+                padding: 3%;
+                background: #43D1AF;
+                border-bottom: 2px solid #30C29E;
+                border-top-style: none;
+                border-right-style: none;
+                border-left-style: none;
+                color: #fff;
+            }
+
+                .form-style-6 input[type="submit"]:hover,
+                .form-style-6 input[type="button"]:hover {
+                    background: #2EBC99;
+                }
     </style>
 </head>
 <body>
@@ -1318,54 +1627,122 @@
             <h4 class="text-muted offset-top-20 offset-md-top-41">We offer <span class="text-primary font-weight-bold">2,989</span> job vacancies right now!</h4>
         </div>
     </header>
-    <section class="belt-container row">
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
+    <section>
+        <div class="belt-container row">
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 col-12">
+                <span class="fa fa-bars"></span>
+                <br />
+                dfgb
+                <br />
+                <span class="fa fa-ellipsis-h"></span>
+                <hr />
+            </div>
         </div>
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
-        </div>
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
-        </div>
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
-        </div>
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
-        </div>
-        <div class="col-xl-2 col-md-4 col-sm-6 col-12">
-            <span class="fa fa-bars"></span>
-            <br />
-            dfgb
-            <br />
-            <span class="fa fa-ellipsis-h"></span>
-            <hr />
+    </section>
+
+
+    <section style=" padding-top: 110px; padding-bottom: 110px;">
+        <div style="        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center !important;
+        max-width: 1200px;
+">
+            <h1>Why People Choose Us</h1>
+            <hr style=" background: #404142;
+        fill: #404142;
+        width: 30px;
+        height: 2px;
+        padding: 0;
+        margin: 27px auto 34px;
+        box-sizing: content-box;
+    ">
+            <div style="margin-top: 66px;
+        text-align: left !important;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    ">
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="card">
+                        <img src="images/user-john-doe-270x270.jpg" alt="Avatar">
+                        <div class="card-detail">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="card">
+                        <img src="images/user-john-doe-270x270.jpg" alt="Avatar">
+                        <div class="card-detail">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="card">
+                        <img src="images/user-john-doe-270x270.jpg" alt="Avatar">
+                        <div class="card-detail">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="card">
+                        <img src="images/user-john-doe-270x270.jpg" alt="Avatar">
+                        <div class="card-detail">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1373,61 +1750,321 @@
 
 
 
+    <section>
+        <div style="text-align:center;">
+            <h1>Why People Choose Us</h1>
+            <hr style=" background: #404142;
+        fill: #404142;
+        width: 30px;
+        height: 2px;
+        padding: 0;
+        margin: 27px auto 34px;
+        box-sizing: content-box;
+    ">
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/img_nature_wide.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/img_snow_wide.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/img_mountains_wide.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div style="        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center !important;
+        max-width: 1200px;
+">
+            <div style="text-align:center;">
+                <h1>Why People Choose Us</h1>
+                <hr style=" background: #404142;
+        fill: #404142;
+        width: 30px;
+        height: 2px;
+        padding: 0;
+        margin: 27px auto 34px;
+        box-sizing: content-box;
+    ">
+
+                <div class="col-lg-5">
+                    <div class="block-faq-claccis">
+                        <h5>faq</h5>
+                        <p class="offset-top-30">Here are some of the most frequently asked questions. Find the answer, or contact us for any details.</p>
+                        <a class="btn btn-primary offset-top-30" href="#">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <button class="accordion">Section 1</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">Section 2</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">Section 3</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div style="        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center !important;
+        max-width: 1200px;
+">
+            <div style="text-align:center;">
+                <h1>Why People Choose Us</h1>
+                <hr style=" background: #404142;
+        fill: #404142;
+        width: 30px;
+        height: 2px;
+        padding: 0;
+        margin: 27px auto 34px;
+        box-sizing: content-box;
+    ">
 
 
 
 
 
+                <div class="form-style-6">
+                    <form>
+                        <input type="text" name="field1" placeholder="Your Name" />
+                        <input type="email" name="field2" placeholder="Email Address" />
+                        <textarea name="field3" placeholder="Type your Message"></textarea>
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+                <!--<div class="row justify-content-md-center">
+                <div class="col-md-10 col-lg-10 col-xl-6">
+                    <h3>Get in Touch</h3>-->
+                <!-- RD Mailform-->
+                <!--<form method="post">
+                <div class="">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label class="" for="forms-name">First name</label>
+                            <input class="" id="forms-name" type="text" name="name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="" for="forms-last-name">Last name</label>
+                            <input class="" id="forms-last-name" type="text" name="last-name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="" for="forms-email">E-mail</label>
+                            <input class="" id="forms-email" type="email" name="email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="" for="forms-phone">Phone</label>
+                            <input class="" id="forms-phone" type="text" name="phone">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="">
+                            <label class="" for="forms-message">Message</label>
+                            <textarea class="" id="forms-message" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class=" form-wrap-validation-left">-->
+                <!--Google captcha-->
+                <!--<div class="recaptcha" id="captcha1"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-button">
+                                    <button class="btn btn-primary " type="submit">send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>-->
 
-    <ul>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Purple</li>
-        <li>Blue</li>
-        <li>Yellow</li>
-        <li>Black</li>
-        <li>White</li>
-    </ul>
+
+            </div>
+        </div>
+    </section>
 
 
 
 
 
+    <section style="        padding-top: 110px;
+        padding-bottom: 110px;
+        background: #f6f6f6;
+        fill: #f6f6f6;
+">
+        <div style="        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center !important;
+        max-width: 1200px;
+">
+            <h1>Why People Choose Us</h1>
+            <hr style=" background: #404142;
+        fill: #404142;
+        width: 30px;
+        height: 2px;
+        padding: 0;
+        margin: 27px auto 34px;
+        box-sizing: content-box;
+    ">
+            <div style="margin-top: 66px;
+        text-align: left !important;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    ">
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="">
+                        <div>
+                            <div class=""><span class=""></span></div>
+                            <div class="">
+                                <h5>Verified employers</h5>
+                            </div>
+                        </div>
+                        <p>We pay a lot of attention to the employers we cooperate with and vacancies they submit to our job board.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="">
+                        <div>
+                            <div class=""><span class=""></span></div>
+                            <div class="">
+                                <h5>Verified employers</h5>
+                            </div>
+                        </div>
+                        <p>We pay a lot of attention to the employers we cooperate with and vacancies they submit to our job board.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="">
+                        <div>
+                            <div class=""><span class=""></span></div>
+                            <div class="">
+                                <h5>Verified employers</h5>
+                            </div>
+                        </div>
+                        <p>We pay a lot of attention to the employers we cooperate with and vacancies they submit to our job board.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 col-12">
+                    <div class="">
+                        <div>
+                            <div class=""><span class=""></span></div>
+                            <div class="">
+                                <h5>Verified employers</h5>
+                            </div>
+                        </div>
+                        <p>We pay a lot of attention to the employers we cooperate with and vacancies they submit to our job board.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="context-dark">
+        <div class="parallax-container" data-parallax-img="images/background-02-1920x870.jpg">
+            <div class="material-parallax parallax"><img src="images/background-02-1920x870.jpg" alt="" style="display: block; transform: translate3d(-50%, 242px, 0px);"></div>
+            <div class="parallax-content">
+                <div class="bg-overlay-gray-darkest">
+                    <div class="container section-98">
+                        <div class="row align-items-sm-center no-gutters">
+                            <div class="col-lg-8 col-xl-10 text-center text-lg-left">
+                                <h1>Start Building Your Own Career Now</h1>
+                            </div>
+                            <div class="col-lg-4 col-xl-2 offset-top-41 offset-lg-top-0"><a class="btn btn-primary btn-block mx-auto d-block" href="your-career-starts-here.html" style="max-width:195px;">get started</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer style="background: #191919; fill: #191919;">
+        <div style="        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center !important;
+        max-width: 1200px;
+">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-brand"><a href="index.html"><img width="218" height="35" src="images/logo.png" alt=""></a></div>
+                    <ul class="list-inline list-inline-sm d-inline-block offset-top-34 post-meta text-dark list-inline-primary">
+                        <li class="list-inline-item"><a href="#"><span class="icon icon-xxs fa-facebook"></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="icon icon-xxs fa-twitter"></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="icon icon-xxs fa-google-plus"></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="icon icon-xxs fa-youtube-play"></span></a></li>
+                        <li class="list-inline-item"><a href="#"><span class="icon icon-xxs fa-instagram"></span></a></li>
+                    </ul>
+                    <p class="text-dark offset-top-10">Intense JB © <span id="copyright-year">2020</span> . <a href="#">Privacy Policy</a> . Design&nbsp;by&nbsp;<a href="https://zemez.io/">Zemez</a></p>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -1447,20 +2084,53 @@
 
 
     <script>
-                                                //window.onscroll = function () { myFunction() };
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-                                                //function myFunction() {
-                                                //    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                                                //        //document.getElementById("myP").className = "test";
-                                                //        //alert("no");
-                                                //    } else {
-                                                //        //document.getElementById("myP").className = "";
-                                                //        alert(document.querySelector('.navbar').classList);
-                                                //        document.querySelector('.navbar').classList.toggle('change');
-                                                //        //document.querySelector('.navbar').className = "navbar.change.row";
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-                                                //    }
-                                                //}
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+
+
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
     </script>
 </body>
 </html>
