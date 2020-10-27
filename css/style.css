@@ -540,7 +540,7 @@ section {
     width: 100%;
     z-index: 100;
     background: #191919;
-    box-shadow: 0 1px 10px 0 rgba(67, 67, 69, 0.35);
+    box-shadow: 0 8px 10px 0 rgba(67, 67, 69, 0.5);
 }
 
     .navbar ul {
@@ -1300,13 +1300,32 @@ section {
 /*#endregion */
 
 
+.footer-text {
+    color: #BABABA;
+    text-align: justify;
+}
+
+    .footer-text a {
+        color: #FF6E00;
+        text-decoration: none;
+    }
+
+        .footer-text a:hover {
+            color: #994200;
+        }
+
+
+
+
+
+
 
 .social-media-btns {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-size:1.1rem;
+    font-size: 1.1rem;
 }
 
     .social-media-btns li {
@@ -1323,7 +1342,7 @@ section {
 
             .social-media-btns li a:hover {
                 background-color: #111111;
-                color:#ff6e00;
+                color: #ff6e00;
             }
 
 
@@ -1372,17 +1391,17 @@ section {
         .form-style-6 input[type="url"]:focus,
         .form-style-6 textarea:focus,
         .form-style-6 select:focus {
-            box-shadow: 0 0 5px #43D1AF;
+            box-shadow: 0 0 5px #FF6E00;
             padding: 3%;
-            border: 1px solid #43D1AF;
+            border: 1px solid #FF6E00;
         }
 
     .form-style-6 input[type="submit"],
     .form-style-6 input[type="button"] {
         width: 100%;
         padding: 3%;
-        background: #662c00;
-        border-bottom: 2px solid #30C29E;
+        background: #FF6E00;
+        border-bottom: 2px solid #994200;
         border-top-style: none;
         border-right-style: none;
         border-left-style: none;
@@ -1391,5 +1410,5 @@ section {
 
         .form-style-6 input[type="submit"]:hover,
         .form-style-6 input[type="button"]:hover {
-            background: #2EBC99;
+            background: #994200;
         }
