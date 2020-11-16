@@ -1,45 +1,22 @@
-﻿/*@font-face {
-	font-family: Lato;
-	src: url(fonts/Lato/Lato-Black.ttf);
-}*/
+﻿/*I have written in the source, address of the item I have learned or seen next to the same item*/
+/*The addresses you see next to the code are referenced*/
 
-
-
-@font-face {
-    font-family: lato;
-    src: url('../fonts/LatoLatin-Bold.woff2') format('woff2'), url('../fonts/LatoLatin-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: lato;
-    src: url('../fonts/LatoLatin-Light.woff2') format('woff2'), url('../fonts/LatoLatin-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: lato;
-    src: url('../fonts/LatoLatin-Regular.woff2') format('woff2'), url('../fonts/LatoLatin-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    /*font-family: Lato;*/
-    /*font-family: "Open Sans", Helvetica, Arial, sans-serif;*/
-    /*font-family: Verdana, sans-serif;*/
-    font-size: 0.9rem;
+    font-size: 15px;
     line-height: 1.5;
     color: #1C1F29;
-    font-family: lato;
-    font-weight: lighter;
+    font-family: 'Montserrat', 'Open Sans', 'Roboto';
+    /*font-weight: normal;*/
     margin: 0;
 }
 
@@ -48,19 +25,18 @@ img {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 45px;
     margin-bottom: 0px;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
 }
-
 
 /*#region section & content */
 
@@ -73,8 +49,12 @@ section {
         /*padding-bottom: 30px;*/
     }
 
+.minimize-divider {
+    font-size: 30px !important;
+}
+
 @media only screen and (min-width: 576px) {
-    section.content {
+    section .content {
         padding-top: 40px;
         /*padding-bottom: 40px;*/
     }
@@ -479,7 +459,7 @@ section {
 .top-pic-container {
     height: 700px;
     position: relative;
-    background-image: url(../images/top_pic_1200x750.jpg);
+    background-image: url(https://iranads.wecoders.nl/images-nl/top_pic_1200x750.jpg);
     background-size: cover; /* to make background image responsive https://www.w3schools.com/css/css_rwd_images.asp */
     background-position: center; /* to make background image responsive https://www.w3schools.com/css/css_rwd_images.asp */
     background-repeat: no-repeat;
@@ -499,7 +479,7 @@ section {
 @media (min-width: 1200px) {
     .top-pic-container {
         height: 750px;
-        background-image: url(../images/top_pic_1600x1000.jpg);
+        background-image: url(https://iranads.wecoders.nl/images-nl/top_pic_1600x1000.jpg);
     }
 
     .top-pic-info {
@@ -510,7 +490,7 @@ section {
 @media (min-width: 1600px) {
     .top-pic-container {
         height: 750px;
-        background-image: url(../images/top_pic_3000x1880.jpg);
+        background-image: url(https://iranads.wecoders.nl/images-nl/top_pic_3000x1880.jpg);
     }
 
     .top-pic-info {
@@ -858,7 +838,7 @@ section {
 /*#region smallest size for mobile */
 
 .belt-container {
-    background-color: #ff994c; /* https://www.color-hex.com/color/ff6e00 */
+    background-color: #cc5800 ; /* https://www.color-hex.com/color/ff6e00 */
     overflow: hidden;
 }
 
@@ -871,6 +851,7 @@ section {
 
         .belt-container .belt-box:hover {
             background: #ff7c19; /* https://www.color-hex.com/color/ff6e00 */
+            cursor:pointer;
         }
 
         .belt-container .belt-box hr {
@@ -1000,6 +981,7 @@ section {
     /*display: table;*/
     width: 270px;
     margin-bottom: 25px;
+    cursor:pointer;
 }
 
     .card:hover {
@@ -1010,7 +992,7 @@ section {
 
 .card-detail {
     padding: 2px 16px;
-    font-size: 1.4rem;
+    font-size: 17px;
     height: 300px;
     text-align: justify; /* reference: https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
     /*text-justify: inter-word;*/
@@ -1029,7 +1011,7 @@ section {
         text-align: justify; /* reference: https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
         /*text-justify: inter-word;*/
         padding: 2px 8px;
-        font-size: 1.1rem;
+        font-size: 16px;
     }
 
 .story-btn {
@@ -1062,23 +1044,36 @@ section {
 /* reference: https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .parallax {
+    position:relative;
     content: "";
-    background-image: url("../images/71625_fullimage_reisinspiratie.jpg");
+    background-image: url("https://iranads.wecoders.nl/images-nl/71625_fullimage_reisinspiratie.jpg");
     height: 200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+    .parallax h2 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 20px;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        text-shadow: 2px 2px 4px #000000;
+    }
 /*#endregion */
 
 /*#region activity slides */
-
 /* reference: https://www.w3schools.com/w3css/w3css_slideshow.asp */
-
 .activity-slides {
     display: none
+}
+.activity-slides  img{
+    width:100%;
 }
 
 /* Next & previous buttons */
@@ -1121,7 +1116,7 @@ section {
     .activity-text p {
         padding: 15px;
         text-align: left !important;
-        font-size: 1.1rem;
+        font-size: 17px;
         background-color: rgba(0,0,0,0.7);
     }
 
@@ -1131,7 +1126,7 @@ section {
 /* Number text (1/5 etc) */
 .numbertext {
     color: #ff6e00;
-    font-size: 1.0rem;
+    font-size: 15px;
     font-weight: bold;
     padding: 8px 12px;
     position: absolute;
@@ -1215,7 +1210,7 @@ section {
         text-align: justify; /* reference: https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
         /*text-justify: inter-word;*/
         padding: 5px 20px;
-        font-size: 1.1rem;
+        font-size: 17px;
     }
 
     .practical-block:before {
@@ -1229,6 +1224,11 @@ section {
         font-weight: 400;
         color: rgba(0, 0, 0, 0.05);
     }
+
+.practical-h4 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
 
 .practical-btn {
     display: inline-block;
@@ -1263,7 +1263,7 @@ section {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 20px;
     transition: 0.4s;
     color: #ff6e00;
     border-bottom: 1px solid #ccc;
@@ -1292,13 +1292,14 @@ section {
     text-align: justify; /* reference: https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
     /*text-justify: inter-word;*/
     padding: 2px 8px;
-    font-size: 1.1rem;
+    font-size: 17px;
 }
 
 /*#endregion */
 
 /*#endregion */
 
+/*#region footer */
 
 .footer-text {
     color: #BABABA;
@@ -1314,18 +1315,16 @@ section {
             color: #994200;
         }
 
+/*#endregion */
 
-
-
-
-
+/*#region social media buttons */
 
 .social-media-btns {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-size: 1.1rem;
+    font-size: 20px;
 }
 
     .social-media-btns li {
@@ -1345,12 +1344,9 @@ section {
                 color: #ff6e00;
             }
 
+/*#endregion */
 
-
-
-
-
-
+/*#region form */
 
 .form-style-6 {
     font: 95% Arial, Helvetica, sans-serif;
@@ -1361,15 +1357,8 @@ section {
 }
 
     .form-style-6 input[type="text"],
-    .form-style-6 input[type="date"],
-    .form-style-6 input[type="datetime"],
     .form-style-6 input[type="email"],
-    .form-style-6 input[type="number"],
-    .form-style-6 input[type="search"],
-    .form-style-6 input[type="time"],
-    .form-style-6 input[type="url"],
-    .form-style-6 textarea,
-    .form-style-6 select {
+    .form-style-6 textarea {
         transition: all 0.30s ease-in-out;
         outline: none;
         width: 100%;
@@ -1382,22 +1371,14 @@ section {
     }
 
         .form-style-6 input[type="text"]:focus,
-        .form-style-6 input[type="date"]:focus,
-        .form-style-6 input[type="datetime"]:focus,
         .form-style-6 input[type="email"]:focus,
-        .form-style-6 input[type="number"]:focus,
-        .form-style-6 input[type="search"]:focus,
-        .form-style-6 input[type="time"]:focus,
-        .form-style-6 input[type="url"]:focus,
-        .form-style-6 textarea:focus,
-        .form-style-6 select:focus {
+        .form-style-6 textarea:focus {
             box-shadow: 0 0 5px #FF6E00;
             padding: 3%;
             border: 1px solid #FF6E00;
         }
 
-    .form-style-6 input[type="submit"],
-    .form-style-6 input[type="button"] {
+    .form-style-6 input[type="submit"] {
         width: 100%;
         padding: 3%;
         background: #FF6E00;
@@ -1408,7 +1389,109 @@ section {
         color: #fff;
     }
 
-        .form-style-6 input[type="submit"]:hover,
-        .form-style-6 input[type="button"]:hover {
+        .form-style-6 input[type="submit"]:hover{
             background: #994200;
+            cursor:pointer;
         }
+
+
+/*#endregion */
+
+/*#region table */
+/* https://css-tricks.com/complete-guide-table-element */
+table {
+    background: #f5f5f5;
+    border-collapse: separate;
+    box-shadow: inset 0 1px 0 #fff;
+    line-height: 24px;
+    margin: 0px auto;
+    text-align: left;
+    width: 668px;
+}
+
+th {
+    background-color: #4c2100; /* https://www.color-hex.com/color/ff6e00 */
+    border-left: 1px solid #555;
+    border-right: 1px solid #777;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #333;
+    box-shadow: inset 0 1px 0 #999;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 #000;
+}
+
+    th:after {
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+        content: '';
+        display: block;
+        height: 25%;
+        left: 0;
+        margin: 1px 0 0 0;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+    }
+
+    th:first-child {
+        border-left: 1px solid #777;
+        box-shadow: inset 1px 1px 0 #999;
+    }
+
+    th:last-child {
+        box-shadow: inset -1px 1px 0 #999;
+    }
+
+td {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 300ms;
+    text-align: center;
+}
+
+    td:first-child {
+        box-shadow: inset 1px 0 0 #fff;
+    }
+
+    td:last-child {
+        border-right: 1px solid #e8e8e8;
+        box-shadow: inset -1px 0 0 #fff;
+    }
+
+tr {
+    background: #f5f5f5;
+}
+
+    tr:nth-child(odd) td {
+        background: #f1f1f1;
+    }
+
+    tr:last-of-type td {
+        box-shadow: inset 0 -1px 0 #fff;
+    }
+
+        tr:last-of-type td:first-child {
+            box-shadow: inset 1px -1px 0 #fff;
+        }
+
+        tr:last-of-type td:last-child {
+            box-shadow: inset -1px -1px 0 #fff;
+        }
+
+tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+/*#endregion */
